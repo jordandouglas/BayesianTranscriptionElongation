@@ -1,0 +1,210 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{color,soul}
+\usepackage{xcolor}
+
+\begin{document}
+
+\section*{Revisions for `Bayesian inference and comparison of stochastic transcription elongation models'}
+
+
+
+
+We wish to thank the reviewers for their helpful feedback, and the editors of PLOS Computational Biology for considering our paper.
+
+
+This document is divided into two sections.  First, we acknowledge and respond to individual critiques -- which have prompted considerable structural changes to the paper. In the second section, we highlight the major structural differences between the original and revised versions.
+
+Relevant changes are also highlighted in the revised manuscript.
+
+We also wish to request two changes in affiliation from the editors. First, the ``Department of Computer Science" at the University of Auckland has since been renamed to the ``School of Computer Science". Second, co-author Alexei J. Drummond is now additionally affiliated with the ``School of Biological Sciences"  at the University of Auckland, alongside the other authors. The new author affiliations are in the revised manuscript.
+
+
+
+
+\subsection*{Issues}
+
+
+\noindent \textbf{1. From both reviewers: the ``results" are deferred to the Discussion section. This makes the manuscript difficult to follow.} \\
+\textit{Response:} We agree. The ``Results" section has been renamed to ``Models" and ``Discussion" has been renamed to ``Results and Discussion". The section on approximate Bayesian computation has been moved from the former to the latter. The ``Materials and Methods" section has been removed altogether and its material has been dispersed throughout the paper. We hope there is sufficient justification for the editors of PLOS Computational Biology to permit a deviation from the canonical template. \\
+
+
+
+\noindent \textbf{2.  The authors should include a summary at the end of the paper.} \\
+\textit{Response:} We have added a ``Conclusion" section. This was adapted from what used to be the first paragraph of the discussion. \\
+
+
+\noindent \textbf{3.  The MCMC does not look like it has converged. $\hat{R}$ and chain lengths should be provided to measure convergence.} \\
+\textit{Response:} The simulations have been run for longer and $\hat{R}$ and chain lengths have been provided. Additionally, the ESS is now provided for every parameter instead of only providing the range and mean. To assist with interpretating the Bayesian inference, we have plotted the full posterior and prior distributions instead of using a table (new Fig 5). Note that running the simulations for longer did not change the qualitative results of this paper nor did it change the set of models in the 95\% credibility set.  \\
+
+\noindent \textbf{4. Chemical master equations should be provided. If these can be solved analytically it may provide deeper insights into the system.} \\
+\textit{Response:} We have provided chemical master equations for single-cycles of the four equilibrium models (see S2 appendix), and incorporated this into our discussion. This information may help readers to better understand the kinetics of the system. Note that the chemical master equations for the full gene sequence involves a number of states that grows with the length of the gene and therefore providing  analytical solutions to the chemical master equation becomes impractical. Numerical instabilities would be compounded by the extension of the transcription model to include eg. backtracking, hypertranslocation, nucleotide misincorporation. What we have provided in this paper is a framework for inference on any model of the system.  \\
+
+
+
+\noindent \textbf{5. Portions of the manuscript are quite difficult to follow. Figure 1B shows simulations before one has any inkling about the simulation method. The authors spend two paragraphs describing the details of sequence-dependent kinetics and energetics of disruption, which properly belong to the section on model description.} \\
+\textit{Response:} The caption for Figure 1B has been adjusted. The two paragraphs mentioned have been moved into the ``Parameterisation of the translocation step" section. The section in ``Materials and Methods" concerning nucleic acid thermodynamics has also been moved into this section.   \\
+
+
+
+\noindent \textbf{6. Translocation kinetics are difficult to follow. Should state at the outset that the translocation kinetics appeal to transition-state theory. Appendix S3 (four translocation transition state models) provides additional confusion. } \\
+\textit{Response:} We believe that the  restructurings described in (5) will help with this issue. Additionally, transition-state theory is now mentioned several times leading into the relevant section. A truncated version of Appendix S3 and its figure have been moved into the ``Parameterisation of the translocation step" section and all mention of the models which are not being used have been removed. We agree that these details were unnecessary and distracting. Finally, we have made various general restructurings of the ``Parameterisation of the translocation step" section detailed at the end of this letter. We hope that all of these changes will make the material easier to follow.  \\
+
+
+\newpage
+\noindent \textbf{7. Figure 4B, which is critical for understanding the models, could use some more information. The parameter being introduced at each step should be specified.} \\
+\textit{Response:} The image has been corrected.  \\
+
+
+\noindent \textbf{8. Would be useful to summarise results from all models, not just the ``best fit" models} \\
+\textit{Response:} The ``not-best-fit" models, such as models 1-10 for RNAP and pol II, occur in the posterior distribution with probability zero. This means that given the value of $\epsilon$ used in the analysis, the inference engine was unable to find even a single state which has model 1-10.  \\
+
+
+
+\noindent \textbf{9. Other minor issues. Page 1, line 12: Change template DNA to DNA. Page 1, line 33: Change practise to practice. Figure 3 legend: Explain why the transition states are irrelevant in a translocation equilibrium model. Figure 2 legend: define $\beta_1$, $\beta_2$, and $h$ here. Page 10, line 302: Use significant figures.} \\
+\textit{Response:} Corrected.  \\
+
+
+
+
+\newpage
+\section*{Structural changes}
+
+The original (ie. previous) structure is below. Highlighted areas represent new sections / figures or old ones moved to the highlighted place. \\
+
+
+\begin{enumerate}
+
+	\item Introduction
+	\begin{enumerate}
+
+		\item RNAPs and single-molecule experiments (line 1-26) + Fig 1 
+		
+		\item Model parameters and parameter reduction (line 27-43) + Fig 2 
+		
+		\item Sequence-dependent kinetics (line 44-62) \hl{// Moved this into ``Parameterisation of the translocation step".} 
+		
+		\item Deterministic vs stochastic models and inference (line 63-83)  
+		
+		\item ``In this study we..." (line 84-90)
+
+
+
+	\end{enumerate}
+	
+	
+	\item Results \hl{ // Renamed to ``Models" } 
+	\begin{enumerate}
+
+
+
+		\item Notation and state space 
+		
+		\item Parameterisation of the NTP binding step  \hl{ // New section. Content moved here from ``Model space". } 
+	
+		\item Parameterisation of the translocation step  
+		\begin{enumerate}
+	
+			\item Thermodynamic models of base pairing energies \hl{ // New section. (c) from Introduction and ``Nucleic acid thermodynamics" from Materials and Methods were moved here} 
+			
+			\item Calculation of translocation rates or translocation equilibrium constant \hl{ // New section. The important concepts regarding translocation kinetic are moved here and the less important details now occur later in the section} 
+	
+			\item Energetic bias for the posttranslocated states
+			\item Polymerase displacement and formation of the transition state
+			\item Energy barrier of translocation \hl{ // A simpler form of S3 Appendix has been moved here.}
+
+	
+		\end{enumerate}
+	
+		\item Model space + Fig 4
+		
+		\item Stochastic modelling 
+		
+		\item Relation to previous models and stochastic simulations \hl{ // Subsection moved here from Discussion}
+		
+		\item Model selection with MCMC-ABC  + Tables 1 and 2  \hl{ // Moved into ``Results and Discussion". Further split into two subsections. } 
+		
+
+
+	\end{enumerate}
+	
+	
+	\item Discussion \hl{ // Renamed to ``Results and Discussion" } 
+	\begin{enumerate}
+
+		\item ``In this paper we..." (line 250-263) \hl{ // Moved to the new section ``Conclusion"}
+
+		\item Relation to previous models and stochastic simulations \hl{ // Subsection moved into Models section}
+		
+		\item Model selection with MCMC-ABC \hl{ // New subsection. Adapted from the top half of ``Model selection with MCMC-ABC" and ``Materials and Methods"} 		
+
+
+		\item Posterior distributions + Tables 1 and 2 + Figs 5 and 6 \hl{ // New subsection. Adapted from the bottom half of ``Model selection with MCMC-ABC". Table 2 now displays MCMC summaries instead of parameter estimates.  Fig 5 is a new figure. Fig 6 was moved here from S3 Fig.} 
+		
+		\item Translocation rates differ among RNA polymerases
+		
+		\item The data does not determine the kinetics of the NTP binding
+step 
+
+		\item RNAP has an energetic preference for the posttranslocated
+state
+
+		\item $\delta_1$ may be an important parameter but its physical meaning is
+unclear
+
+		\item Comparing the kinetics of RNA polymerases
+
+		\item Bayesian inference of transcription elongation
+
+
+	\end{enumerate}
+	
+	
+	\item Materials and methods  \hl{ // Section deleted. Subsections are dispersed around paper. } 
+	\begin{enumerate}
+
+		\item Nucleic acid thermodynamics \hl{// Moved into ``Parameterisation of the translocation step"}
+		
+		
+		\item Software and algorithms \hl{// Moved into SI and ``Model selection with MCMC-ABC"}
+		
+		\item Prior distributions \hl{// Moved into ``Model selection with MCMC-ABC"}
+
+
+
+	\end{enumerate}
+	
+	
+	\item Conclusion  \hl{ // Added a conclusion}
+	
+	
+	\item Supporting information
+	\begin{enumerate}
+
+		\item Stochastic simulation
+		
+		\item Chemical master equations  \hl{// New appendix}
+		
+		\item MCMC-ABC \hl{// Moved material here from ``Software and algorithms"}
+		
+		\item Approximating the translocation transition state  + S1 Fig \hl{// Appendix deleted. The 3 transition state models not being used were removed altogether. The 1 model being used (+ S1 Fig) was relocated to ``Parameterisation of the translocation step".}
+		
+		
+		\item Prior distributions + S2 Fig
+		
+		
+		\item S3 Fig \hl{// Moved into ``Results and Discussion"}
+
+
+
+	\end{enumerate}
+
+
+
+\end{enumerate}
+
+
+
+
+\end{document}
