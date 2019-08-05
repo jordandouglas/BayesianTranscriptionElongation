@@ -213,7 +213,7 @@
 \\
 Jordan Douglas\textsuperscript{1,2},
 Richard Kingston\textsuperscript{1},
-Alexei J. Drummond\textsuperscript{1,2*}
+Alexei J. Drummond\textsuperscript{2*}
 \\
 \bigskip
 \textbf{1} School of Biological Sciences, University of Auckland, Auckland, New Zealand
@@ -334,7 +334,7 @@ Suppose the TEC is transcribing a gene of length $L$. Then let $S(l, t)$ denote 
 
 \subsection*{Parameterisation of the NTP binding step}
 
-\hl{// New section. Content relocated from Model Space}
+\textcolor{red}{\hl{// New section. Content relocated from Model Space}}
 
 
 
@@ -359,7 +359,7 @@ While inferences about the rate constants associated with NTP binding and cataly
 
 \subsubsection*{\hl{Thermodynamic models of base pairing energies}}
 
-\hl{ // New section adapted from Nucleic Acid Thermodynamics (previously in Materials and Methods) and two paragraphs from the Introduction }
+\textcolor{red}{\hl{ // New section adapted from Nucleic Acid Thermodynamics (previously in Materials and Methods) and two paragraphs from the Introduction}}
 
 %The energetics of translocation are dependent on the position within the template.
 
@@ -382,7 +382,7 @@ In order for RNA polymerase to translocate forward (backward), up to two basepai
 
 \subsubsection*{\hl{Calculation of translocation rates or translocation equilibrium constant}}
 
-\hl{ // New section. The critical information regarding translocation kinetics has been brought to the front so that minor details can be skipped by the reader}
+\textcolor{red}{\hl{ // New section. The critical information regarding translocation kinetics has been brought to the front so that minor details can be skipped by the reader}}
 
 
 
@@ -472,7 +472,7 @@ $\Delta G^\ddag_{\tau}$ and $\Delta G_{T(l,t)}^{(bp)}$ (units $k_BT$) together d
 
 $\Delta G^\ddag_{\tau}$ is therefore a sequence-independent baseline term used to compute the translocation barrier heights.  The parameter $\Delta G^\ddag_{\tau}$ must be estimated in order to evaluate translocation rates.
 
-\hl{// The paragraph below was relocated and adapted from SI Appendix 3. SI Appendix 3 has since been deleted.}
+\textcolor{red}{\hl{// The paragraph below was relocated and adapted from SI Appendix 3. SI Appendix 3 has since been deleted.}}
 
 
 In contrast $\Delta G_{T(l,t)}^{(bp)}$ is a term that is evaluated directly from the sequence derived from a model of the transition state (Fig \ref{fig3}B). The term is evaluated as the standard Gibbs energy of a TEC containing all hybrid and gene basepairs found in both $S(l,t)$ and $S(l,t+1)$, ie. the intersection between the two sets of basepairs.
@@ -505,7 +505,7 @@ Partial equilibrium approximations may also simplify the model, as detailed abov
 
 \begin{figure}[!h]
 %\includegraphics[width=\textwidth]{Images/Figure4.pdf}
-\caption{\hl{// B: Arrows in figure now have labels } \textbf{ The space of models to be compared.} (A) The four equilibrium model variants. NTP binding, translocation, both, or neither, could be assumed to achieve equilibrium prior to catalysis. (B) The 12 transcription elongation models. An arrow connects model $i$ to $j$ if augmentation of model $i$ with a single parameter generates model $j$. The number of parameters to estimate  $k$ is shown for each level in the network. Equilibrium approximation colour scheme is the same as in A. $\Delta G_{\tau 1}$ and $\delta_1$ can each be estimated or set to a constant.}
+\caption{\textcolor{red}{\hl{// B: Arrows in figure now have labels }} \textbf{ The space of models to be compared.} (A) The four equilibrium model variants. NTP binding, translocation, both, or neither, could be assumed to achieve equilibrium prior to catalysis. (B) The 12 transcription elongation models. An arrow connects model $i$ to $j$ if augmentation of model $i$ with a single parameter generates model $j$. The number of parameters to estimate  $k$ is shown for each level in the network. Equilibrium approximation colour scheme is the same as in A. $\Delta G_{\tau 1}$ and $\delta_1$ can each be estimated or set to a constant.}
 \label{fig4}
 \end{figure}
 
@@ -535,7 +535,7 @@ The estimation of mean velocity can be broken down into three steps. First, the 
 \subsection*{Relation to previous models and stochastic simulations}
 
 
-\hl{// Section relocated and adapted from ``Discussion" }
+\textcolor{red}{\hl{// Section relocated and adapted from ``Discussion" }}
 
 There is an extensive literature concerned with the kinetic modelling of transcription elongation. Such models may incorporate backtracking, hypertranslocation, and other reactions. Here we are concerned only with the central elongation pathway.
 
@@ -578,7 +578,7 @@ We performed MCMC-ABC experiments which estimated the parameters and model indic
 
 
 
-\hl{// The content below was relocated from the now-removed Materials and Methods}
+\textcolor{red}{\hl{// The content below was relocated from the now-removed Materials and Methods}}
 The datasets we fit our models to are all from the single-molecule literature and are presented in: Figures 5a and 5b of Abbondanzieri et al. 2005 \cite{abbondanzieri2005direct} for \textit{ E. coli} RNAP, Figure 2a of Schweikhard et al. 2014 \cite{schweikhard2014transcription} for \textit{ S. cerevisiae} pol II, and Table 2 of Thomen et al. 2008 \cite{thomen2008t7} for T7 pol. To computationally replicate these experiments as faithfully as we could with the available information and computational limitations, simulations in this study were run on the 4 kb \textit{E. coli} \textit{rpoB} gene for RNAP (GenBank: EU274658), the first 4.75 kb of the human \textit{ rpb1} gene for pol II (NCBI: NG\_027747) the first 10 kb of the Enterobacteria phage $\lambda$ genome for T7 pol (NCBI: NC\_001416). The mean velocities from 32 (for RNAP), 10 (for pol II) and 3 (for T7 pol) simulations of the full respective sequences were used to estimate the mean elongation velocity during MCMC-ABC, given $F$ and [NTP].  \par
 
 For further information about the MCMC-ABC algorithm \cite{beaumont2010approximate, csillery2010approximate}, see ~\nameref{S3_Appendix}.
@@ -683,7 +683,7 @@ $\delta_1$ ($\angstrom$) & Uniform($l = 0$, $u = 3.4$) & Uniformly distributed a
 \subsection*{The posterior distributions}
 
 
-\hl{// Section relocated and adapted from ``Model selection with MCMC-ABC" }
+\textcolor{red}{\hl{// Section relocated and adapted from ``Model selection with MCMC-ABC" }}
 
 The posterior distributions from our MCMC-ABC experiments are presented in Table \ref{table1}, Fig ~\ref{fig5}, and Fig ~\ref{fig6}.
 
@@ -763,7 +763,7 @@ Posterior &$P(M_i|D)$  & 0.81  & 0.19 & 0.29 & 0.71 & 0.96  \\
 \end{tabular}
 %\end{footnotesize}
 }
-\begin{flushleft} \hl{// Rhat values and each individual ESS is now shown in this plot. The parameter estimates were moved to Fig 5}  Each column summarises the posterior distribution for the respective RNA polymerase, which arises from multiple independent MCMC chains. Approximate Bayesian computation threshold $\epsilon$ is shown for each enzyme; state $\Theta$ is accepted into the posterior distribution only if $X^2(\Theta) \leq \epsilon$ (\nameref{S3_Appendix}). Models which appear in an RNA polymerase's 95\% credible set and their posterior probabilities $P(M_i|D)$ are shown. The effective sample size (ESS, calculated with Tracer 1.6 \cite{rambaut2013tracer}) and R-hat ($\hat{R}$ \cite{gelman1992inference, brooks1998general, brooks2011handbook}) of each parameter, conditional on $M_i$, are displayed. A large ESS ($> 100$) and a small $\hat{R}$ ($< 1.1$) imply that the MCMC experiment has converged. Where a parameter is not incorporated in the kinetic model, a `$-$' is left in its place.
+\begin{flushleft} \textcolor{red}{\hl{// Rhat values and each individual ESS is now shown in this plot. The parameter estimates were moved to Fig 5}}  Each column summarises the posterior distribution for the respective RNA polymerase, which arises from multiple independent MCMC chains. Approximate Bayesian computation threshold $\epsilon$ is shown for each enzyme; state $\Theta$ is accepted into the posterior distribution only if $X^2(\Theta) \leq \epsilon$ (\nameref{S3_Appendix}). Models which appear in an RNA polymerase's 95\% credible set and their posterior probabilities $P(M_i|D)$ are shown. The effective sample size (ESS, calculated with Tracer 1.6 \cite{rambaut2013tracer}) and R-hat ($\hat{R}$ \cite{gelman1992inference, brooks1998general, brooks2011handbook}) of each parameter, conditional on $M_i$, are displayed. A large ESS ($> 100$) and a small $\hat{R}$ ($< 1.1$) imply that the MCMC experiment has converged. Where a parameter is not incorporated in the kinetic model, a `$-$' is left in its place.
 \end{flushleft}
 \label{table1}
 \end{adjustwidth}
@@ -785,7 +785,7 @@ Posterior &$P(M_i|D)$  & 0.81  & 0.19 & 0.29 & 0.71 & 0.96  \\
 
 \begin{figure}[!h]
 %\includegraphics[width=\textwidth]{Images/Figure6.pdf}
-\caption{\hl{// Figure relocated from ``Supporting Information"} \textbf{Posterior distributions of simulated velocities.} Black open circles represent experimentally measured mean velocities reported in the original publication for (A) RNAP,  (B) pol II, and (C) T7 pol \cite{abbondanzieri2005direct,schweikhard2014transcription,thomen2008t7}. Each coloured dot represents a single sample simulated from the posterior distribution of parameters/models for the respective polymerase. 30 samples were generated from each of the three posterior distributions. For RNAP, [NTP]$_{eq}$ is defined as [ATP] = 5 $\mu$M, [CTP] = 2.5 $\mu$M, [GTP] = 10 $\mu$M, and [UTP] = 10 $\mu$M. }
+\caption{\textcolor{red}{\hl{// Figure relocated from ``Supporting Information"}} \textbf{Posterior distributions of simulated velocities.} Black open circles represent experimentally measured mean velocities reported in the original publication for (A) RNAP,  (B) pol II, and (C) T7 pol \cite{abbondanzieri2005direct,schweikhard2014transcription,thomen2008t7}. Each coloured dot represents a single sample simulated from the posterior distribution of parameters/models for the respective polymerase. 30 samples were generated from each of the three posterior distributions. For RNAP, [NTP]$_{eq}$ is defined as [ATP] = 5 $\mu$M, [CTP] = 2.5 $\mu$M, [GTP] = 10 $\mu$M, and [UTP] = 10 $\mu$M. }
 \label{fig6}
 \end{figure}
 
@@ -837,7 +837,7 @@ For RNAP and pol II, translocation has frequently been modelled as an equilibriu
 
 
 
-\hl{// Content relocated and adapted from ``Model selection with MCMC-ABC"}
+\textcolor{red}{\hl{// Content relocated and adapted from ``Model selection with MCMC-ABC"}}
 
 
 It remains unclear how to best model the NTP binding step. Models that describe NTP binding as a kinetic process have posterior probabilities of $0.19$ for RNAP, $0.71$ for pol II and $0.96$ for T7 pol (Table \ref{table1}). However, in our sensitivity analysis, where we used different a prior distribution for $\frac{k_{rel}}{k_{bind}}$, these probabilities were $0.65$, $0.22$, and $0.19$, respectively (results not shown).
@@ -979,7 +979,7 @@ The amount of time the reaction takes to occur is sampled from the exponential d
 \label{S2_Appendix}
 \textbf{ Chemical master equations.}
 
-\hl{// Added chemical master equations}
+\textcolor{red}{\hl{// Added chemical master equations}}
 
 The chemical master equations for the four equilibrium variants (Fig ~\ref{fig4}A) of single nucleotide addition cycles are provided in this section. Transcription of a full gene involves chaining multiple of these single-cycle models together.
 
@@ -1254,7 +1254,7 @@ As there is no easily computed likelihood function, simulation is used. The chi-
 where $S_i$ is the mean velocity simulated under the same [NTP] and applied force $F$ that $D_i$ was measured under. The probability that $X^2=0$ is equal to the likelihood $P(D | \Theta)$, however it is computationally impractical to only accept parameters into the posterior distribution when the simulation yields $X^2=0$. Therefore a threshold $\epsilon$ is used and sample $\Theta_i$ is accepted into the posterior only if $X^2(\Theta_i) \leq \epsilon$. This method is called approximate Bayesian computation \cite{beaumont2010approximate, csillery2010approximate}. This is coupled with Markov chain Monte Carlo (MCMC) to give the MCMC-ABC algorithm which is becoming increasingly popular among computational biologists \cite{beaumont2010approximate, ratmann2007using}.  \\
 
 
-\hl{// Content below relocated and adapted from the since-removed ``Materials and Methods"}
+\textcolor{red}{\hl{// Content below relocated and adapted from the since-removed ``Materials and Methods"}}
 
 
 
