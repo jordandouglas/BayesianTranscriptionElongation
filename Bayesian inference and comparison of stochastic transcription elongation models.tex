@@ -213,7 +213,7 @@
 \\
 Jordan Douglas\textsuperscript{1,2},
 Richard Kingston\textsuperscript{1},
-Alexei J. Drummond\textsuperscript{2*}
+Alexei J. Drummond\textsuperscript{1,2*}
 \\
 \bigskip
 \textbf{1} School of Biological Sciences, University of Auckland, Auckland, New Zealand
@@ -256,12 +256,12 @@ Transcription is carried out by RNA polymerases: RNAP in \textit{Escherichia col
 
 
 
-Optical trapping experiments have been performed on the transcription elongation complex (TEC) from a variety of organisms \cite{abbondanzieri2005direct, adelman2002single, bai2007mechanochemical, hodges2009nucleosomal, galburt2007backtracking, skinner2004promoter, dulin2015elongation}. In a typical experimental setup, two polystyrene beads (around 600 nm in diameter) are tethered to the system; one attached to the RNA polymerase and the other to the \hl{DNA} \cite{abbondanzieri2005direct}. As transcription elongation progresses, the distance between the two beads increases and the velocity of a single TEC can be computed. Optical tweezers can be used to apply a force $F$ to the system (Fig ~\ref{fig1}).  \par
+Optical trapping experiments have been performed on the transcription elongation complex (TEC) from a variety of organisms \cite{abbondanzieri2005direct, adelman2002single, bai2007mechanochemical, hodges2009nucleosomal, galburt2007backtracking, skinner2004promoter, dulin2015elongation}. In a typical experimental setup, two polystyrene beads (around 600 nm in diameter) are tethered to the system; one attached to the RNA polymerase and the other to the DNA \cite{abbondanzieri2005direct}. As transcription elongation progresses, the distance between the two beads increases and the velocity of a single TEC can be computed. Optical tweezers can be used to apply a force $F$ to the system (Fig ~\ref{fig1}).  \par
 
 \begin{figure}[!h]
 %\includegraphics[width=0.5\textwidth]{Images/Figure1.pdf}
 \caption{\textbf{ Effect of an applied force on elongation velocity.}
-(A) Optical trapping setup showing dsDNA being transcribed by RNA polymerase (grey ellipse) into mRNA. Two polystyrene beads are tethered to the system allowing the application of force using optical tweezers. An assisting load $F>0$ acts in the same direction as transcription (top) while a hindering load $F<0$ acts in the opposing direction (bottom). Figure not to scale. (B) \hl{Schematic depiction of the effect of applying a force on RNA polymerase. Due to the stochastic nature of transcription at the single-molecule level, each experiment yields a different distance-time trajectory, even under the same applied force.} }
+(A) Optical trapping setup showing dsDNA being transcribed by RNA polymerase (grey ellipse) into mRNA. Two polystyrene beads are tethered to the system allowing the application of force using optical tweezers. An assisting load $F>0$ acts in the same direction as transcription (top) while a hindering load $F<0$ acts in the opposing direction (bottom). Figure not to scale. (B) Schematic depiction of the effect of applying a force on RNA polymerase. Due to the stochastic nature of transcription at the single-molecule level, each experiment yields a different distance-time trajectory, even under the same applied force. }
 \label{fig1}
 \end{figure}
 
@@ -277,24 +277,24 @@ A single cycle in the main transcription elongation pathway (Fig ~\ref{fig2}) re
 \begin{figure}[!h]
 %\includegraphics[width=\textwidth]{Images/Figure2.pdf}
 \caption{\textbf{ State diagrams of RNA polymerase.}
-(A) The model of the main transcription elongation pathway, which shows the postulated states; the pathways for interconversion; and the rate constants that govern each part of the reaction. The transcription bubble is the set of $\beta_1 + h + \beta_2$ bases \hl{(see main text for definitions)} in the double-stranded DNA which are unpaired. States are denoted by $S(l, t)$ where $l$ is the length of the mRNA and $t$ is the position of the polymerase active site (small grey rectangle) with respect to the $3^\prime$ end of the mRNA.  Polymerase translocation displaces the polymerase by a distance of $\delta = 1$ bp = $3.4\; \angstrom$. During polymerisation the chain is extended by one nucleotide. (B) Instantiated posttranslocated state of RNA polymerase transcribing the \textit{rpoB} gene sequence, with $\beta_1 = 2, h = 9, \beta_2 = 1$. \hl{Forward translocation requires melting two T/A basepairs (right arrows). Backward translocation requires melting two C/G basepairs (left arrows).} The mRNA secondary structure would also require reconfiguration \cite{tadigotla2006thermodynamic, maoileidigh2011unified}.}
+(A) The model of the main transcription elongation pathway, which shows the postulated states; the pathways for interconversion; and the rate constants that govern each part of the reaction. The transcription bubble is the set of $\beta_1 + h + \beta_2$ bases (see main text for definitions) in the double-stranded DNA which are unpaired. States are denoted by $S(l, t)$ where $l$ is the length of the mRNA and $t$ is the position of the polymerase active site (small grey rectangle) with respect to the $3^\prime$ end of the mRNA.  Polymerase translocation displaces the polymerase by a distance of $\delta = 1$ bp = $3.4\; \angstrom$. During polymerisation the chain is extended by one nucleotide. (B) Instantiated posttranslocated state of RNA polymerase transcribing the \textit{rpoB} gene sequence, with $\beta_1 = 2, h = 9, \beta_2 = 1$. Forward translocation requires melting two T/A basepairs (right arrows). Backward translocation requires melting two C/G basepairs (left arrows). The mRNA secondary structure would also require reconfiguration \cite{tadigotla2006thermodynamic, maoileidigh2011unified}.}
 \label{fig2}
 \end{figure}
 
 
 
 
-Our study aimed to identify the best model to describe this reaction cycle for RNAP, pol II, and T7 pol, based on analysis of published force-velocity data. As there are three reactions, up to six rate constants may be necessary for a kinetic model of a single nucleotide addition. These describe forward and backwards translocation ($k_{fwd}$ and $k_{bck}$), binding and release of NTP ($k_{bind}$ and $k_{rel}$), and NTP catalysis and reverse-catalysis ($k_{cat}$ and $k_{rev}$), also known as pyrophosphorolysis \cite{maitra1967role}. However fewer than six parameters may be required in \hl{practice}. \\
+Our study aimed to identify the best model to describe this reaction cycle for RNAP, pol II, and T7 pol, based on analysis of published force-velocity data. As there are three reactions, up to six rate constants may be necessary for a kinetic model of a single nucleotide addition. These describe forward and backwards translocation ($k_{fwd}$ and $k_{bck}$), binding and release of NTP ($k_{bind}$ and $k_{rel}$), and NTP catalysis and reverse-catalysis ($k_{cat}$ and $k_{rev}$), also known as pyrophosphorolysis \cite{maitra1967role}. However fewer than six parameters may be required in practice. \\
 
 
 First, it is reasonable to assume that polymerisation is effectively irreversible  \cite{erie1992single, rhodes1974ribonucleic, maoileidigh2011unified, bai2004sequence}, as pyrophosphorolysis is a highly exergonic reaction, reducing the number of rate constants to five.
-Second, translocation between the pretranslocated and posttranslocated states, and/or NTP binding, may occur on timescales significantly more rapid than the other steps, in which case they may be modelled as equilibrium processes. These assumptions simplify the model, as the respective forward and reverse reaction rate constants are subsumed by a single equilibrium constant. Third, thermodynamic models of nucleic acid structure can be used to estimate sequence-dependent translocation rates $k_{fwd}(l)$ and $k_{bck}(l)$, \hl{by invoking transition state theory}, and this can sometimes result in parameter reduction \cite{tadigotla2006thermodynamic, maoileidigh2011unified, bai2004sequence}. \\
+Second, translocation between the pretranslocated and posttranslocated states, and/or NTP binding, may occur on timescales significantly more rapid than the other steps, in which case they may be modelled as equilibrium processes. These assumptions simplify the model, as the respective forward and reverse reaction rate constants are subsumed by a single equilibrium constant. Third, thermodynamic models of nucleic acid structure can be used to estimate sequence-dependent translocation rates $k_{fwd}(l)$ and $k_{bck}(l)$, by invoking transition state theory, and this can sometimes result in parameter reduction \cite{tadigotla2006thermodynamic, maoileidigh2011unified, bai2004sequence}. \\
 
 
 
 
 
-Irrespective of equilibrium assumptions and parameterisation, transcription elongation under applied force can be modelled in two fundamentally distinct ways. First, there are the \textbf{deterministic}  equations which can be used to calculate the mean pause-free elongation velocity $v(F, \text{[NTP]})$ as a function of force $F$ and NTP concentration [NTP]. \hl{ This kind of model can be derived from  the differential equations describing the time evolution of all species, by application of the steady state approximation. Force effects on the translocation step are incorporated using transition state theory} \cite{bustamante2004mechanical,cleland1975partition}.
+Irrespective of equilibrium assumptions and parameterisation, transcription elongation under applied force can be modelled in two fundamentally distinct ways. First, there are the \textbf{deterministic}  equations which can be used to calculate the mean pause-free elongation velocity $v(F, \text{[NTP]})$ as a function of force $F$ and NTP concentration [NTP].  This kind of model can be derived from  the differential equations describing the time evolution of all species, by application of the steady state approximation. Force effects on the translocation step are incorporated using transition state theory \cite{bustamante2004mechanical,cleland1975partition}.
 
 An example is the following 3-parameter model \cite{abbondanzieri2005direct}.
 
@@ -318,7 +318,7 @@ In this study we used a Markov-chain-Monte-Carlo approximate-Bayesian-computatio
 
 
 % Results and Discussion can be combined.
-\section*{\hl{Models}}
+\section*{Models}
 
 
 
@@ -327,14 +327,14 @@ In this study we used a Markov-chain-Monte-Carlo approximate-Bayesian-computatio
 
 Suppose the TEC is transcribing a gene of length $L$. Then let $S(l, t)$ denote a TEC state, where the mRNA is currently of length $l \leq L$, and $t \in \mathbb{Z}$ describes the position of the active site with respect to the $3^\prime$ end of the mRNA. When $t=0$ the polymerase is pretranslocated and cannot bind NTP, and when $t=1$ the polymerase is posttranslocated and \textit{can} bind NTP  (Fig ~\ref{fig2}). This study is focused on the main elongation pathway and the observed velocities being fitted have pauses filtered out. Therefore, although additional backtracked states ($t < 0$) \cite{wang1998force, shaevitz2003backtracking, abbondanzieri2005direct} and hypertranslocated states ($t > 1$) \cite{artsimovitch2000pausing, zhou2007dissociation} exist, these are not incorporated in the model.
 
-\hl{Let $\beta_1$ and $\beta_2$ be the number of unpaired template nucleotides upstream and downstream of RNA polymerase, respectively, and let $h$ be the number of basepairs in the DNA/mRNA hybrid } (Fig ~\ref{fig2}A). \hl{ Although there are uncertainties in these parameters, they are held constant at $h = 9$, $\beta_1 = 2$, and $\beta_2 = 1$ } \cite{greive2005thinking, maoileidigh2011unified}.
+Let $\beta_1$ and $\beta_2$ be the number of unpaired template nucleotides upstream and downstream of RNA polymerase, respectively, and let $h$ be the number of basepairs in the DNA/mRNA hybrid (Fig ~\ref{fig2}A). Although there are uncertainties in these parameters, they are held constant at $h = 9$, $\beta_1 = 2$, and $\beta_2 = 1$ \cite{greive2005thinking, maoileidigh2011unified}.
 
-\hl{ Transcription of the gene begins at state $S(l_0,0)$ and ends upon reaching $S(L, 0)$, where $l_0 = \beta_1 + h + 2$.}
+Transcription of the gene begins at state $S(l_0,0)$ and ends upon reaching $S(L, 0)$, where $l_0 = \beta_1 + h + 2$.
 
 
 \subsection*{Parameterisation of the NTP binding step}
 
-\textcolor{red}{\hl{// New section. Content relocated from Model Space}}
+
 
 
 
@@ -352,14 +352,14 @@ Under a partial equilibrium approximation NTP binding and release are assumed to
 
 
 
-While inferences about the rate constants associated with NTP binding and catalysis ($k_{bind}$, $\frac{k_{rel}}{k_{bind}}$, and $k_{cat}$) can be made directly from the data, the translocation step is more complex. \hl{Transition state theory} is invoked in order to estimate $k_{fwd}$ and $k_{bck}$. Recasting the problem in this way (1) provides a way of accommodating the effects of applied force on the elongation process, and (2) allows the sequence-dependence of translocation to be incorporated by considering the energetics of basepairing. \hl{When allowing for sequence dependence, the total number of translocation rates required to model translocation of the full gene is $2(L - l_0)$.}
+While inferences about the rate constants associated with NTP binding and catalysis ($k_{bind}$, $\frac{k_{rel}}{k_{bind}}$, and $k_{cat}$) can be made directly from the data, the translocation step is more complex. Transition state theory is invoked in order to estimate $k_{fwd}$ and $k_{bck}$. Recasting the problem in this way (1) provides a way of accommodating the effects of applied force on the elongation process, and (2) allows the sequence-dependence of translocation to be incorporated by considering the energetics of basepairing. When allowing for sequence dependence, the total number of translocation rates required to model translocation of the full gene is $2(L - l_0)$.
 
 
 
 
-\subsubsection*{\hl{Thermodynamic models of base pairing energies}}
+\subsubsection*{Thermodynamic models of base pairing energies}
 
-\textcolor{red}{\hl{ // New section adapted from Nucleic Acid Thermodynamics (previously in Materials and Methods) and two paragraphs from the Introduction}}
+
 
 %The energetics of translocation are dependent on the position within the template.
 
@@ -380,9 +380,9 @@ In order for RNA polymerase to translocate forward (backward), up to two basepai
 
 %For example in SantaLucia's parameters \cite{santalucia1998unified} 5$^\prime$ TA/AT is the weakest doublet at $-0.94$ $k_BT$ while 5$^\prime$ GC/CG is the strongest at $\Delta G^{(bp)} = -3.64$ $k_BT$.
 
-\subsubsection*{\hl{Calculation of translocation rates or translocation equilibrium constant}}
+\subsubsection*{Calculation of translocation rates or translocation equilibrium constant}
 
-\textcolor{red}{\hl{ // New section. The critical information regarding translocation kinetics has been brought to the front so that minor details can be skipped by the reader}}
+
 
 
 
@@ -396,7 +396,7 @@ Let $T(l,t)$ be the translocation transition state between $S(l,t)$ and $S(l,t+1
 \begin{figure}[!h]
 %\includegraphics[width=\textwidth]{Images/Figure3.pdf}
 \caption{\textbf{Parameterisation of the translocation step.}
-(A) Effects of model parameters on state energies. The figure displays a schematic Gibbs energy landscape of translocation, with backtracked states included for visualisation purposes. The solid red lines represent translocation states ($t=0$: pretranslocated, $t=1$: posttranslocated, and $t<0$: backtracked), while the dashed red lines represent transition states. Applying an assisting force $F>0$ tilts the landscape in favour of higher values of $t$. The effect of $\Delta G_{\tau 1}$ is observed at the posttranslocated state $t=1$. In a translocation equilibrium model, \hl{the barrier height is assumed to be so small, = translocation is so rapid, that the transition states are disregarded}.  \hl{(B) A model for the sequence-dependent transition state between translocation states $S(l,  0)$ and $S(l,  1)$. This is required for estimating the Gibbs energy of basepairing $\Delta G_{T(l,t)}^{(bp)}$ in the transition state. The basepairing energy, added to a baseline term $\Delta G^\ddag_{\tau}$, together specify the height of the activation barrier  } (Equation \ref{eq:translocationBarrier}). }
+(A) Effects of model parameters on state energies. The figure displays a schematic Gibbs energy landscape of translocation, with backtracked states included for visualisation purposes. The solid red lines represent translocation states ($t=0$: pretranslocated, $t=1$: posttranslocated, and $t<0$: backtracked), while the dashed red lines represent transition states. Applying an assisting force $F>0$ tilts the landscape in favour of higher values of $t$. The effect of $\Delta G_{\tau 1}$ is observed at the posttranslocated state $t=1$. In a translocation equilibrium model, the barrier height is assumed to be so small, = translocation is so rapid, that the transition states are disregarded. (B) A model for the sequence-dependent transition state between translocation states $S(l,  0)$ and $S(l,  1)$. This is required for estimating the Gibbs energy of basepairing $\Delta G_{T(l,t)}^{(bp)}$ in the transition state. The basepairing energy, added to a baseline term $\Delta G^\ddag_{\tau}$, together specify the height of the activation barrier  (Equation \ref{eq:translocationBarrier}). }
 \label{fig3}
 \end{figure}
 
@@ -472,7 +472,7 @@ $\Delta G^\ddag_{\tau}$ and $\Delta G_{T(l,t)}^{(bp)}$ (units $k_BT$) together d
 
 $\Delta G^\ddag_{\tau}$ is therefore a sequence-independent baseline term used to compute the translocation barrier heights.  The parameter $\Delta G^\ddag_{\tau}$ must be estimated in order to evaluate translocation rates.
 
-\textcolor{red}{\hl{// The paragraph below was relocated and adapted from SI Appendix 3. SI Appendix 3 has since been deleted.}}
+
 
 
 In contrast $\Delta G_{T(l,t)}^{(bp)}$ is a term that is evaluated directly from the sequence derived from a model of the transition state (Fig \ref{fig3}B). The term is evaluated as the standard Gibbs energy of a TEC containing all hybrid and gene basepairs found in both $S(l,t)$ and $S(l,t+1)$, ie. the intersection between the two sets of basepairs.
@@ -501,11 +501,11 @@ The full transcription elongation model makes use of the following 6 parameters:
 However fewer than 6 parameters may be needed to adequately describe the data. If it is assumed that the energy differences between pre and posttranslocated states are determined by basepairing energies alone, the parameter $\Delta G_{\tau 1}$ does not need to be estimated. This is equivalent to holding $\Delta G_{\tau 1}$ constant at 0. If it is assumed that the displacement required for formation of the translocation intermediate state is half the distance between adjacent basepairs, the parameter $\delta_1$ does not need to be estimated. This is equivalent to holding $\delta_1$ constant at $\delta/2$.
 
 Partial equilibrium approximations may also simplify the model, as detailed above. If binding is approximated as an equilibrium process, $k_{bind}$ does not need to be estimated. If translocation is approximated as an equilibrium process,  $\Delta G^\ddag_{\tau}$ and $\delta_1$ do not need to be estimated. One, both, or neither of these two steps (binding and translocation) could be assumed to achieve equilibrium, thus yielding four equilibrium model variants (Fig ~\ref{fig4}A). The introduction of partial equilibrium approximations for both the NTP binding and translocation steps has implications when specifying the prior distributions for the Bayesian analysis (\nameref{S4_Appendix}.)
- \hl{The chemical master equations for single nucleotide addition cycles of these models are presented in} \nameref{S2_Appendix}. \\
+ The chemical master equations for single nucleotide addition cycles of these models are presented in \nameref{S2_Appendix}. \\
 
 \begin{figure}[!h]
 %\includegraphics[width=\textwidth]{Images/Figure4.pdf}
-\caption{\textcolor{red}{\hl{// B: Arrows in figure now have labels }} \textbf{ The space of models to be compared.} (A) The four equilibrium model variants. NTP binding, translocation, both, or neither, could be assumed to achieve equilibrium prior to catalysis. (B) The 12 transcription elongation models. An arrow connects model $i$ to $j$ if augmentation of model $i$ with a single parameter generates model $j$. The number of parameters to estimate  $k$ is shown for each level in the network. Equilibrium approximation colour scheme is the same as in A. $\Delta G_{\tau 1}$ and $\delta_1$ can each be estimated or set to a constant.}
+\caption{(A) The four equilibrium model variants. NTP binding, translocation, both, or neither, could be assumed to achieve equilibrium prior to catalysis. (B) The 12 transcription elongation models. An arrow connects model $i$ to $j$ if augmentation of model $i$ with a single parameter generates model $j$. The number of parameters to estimate  $k$ is shown for each level in the network. Equilibrium approximation colour scheme is the same as in A. $\Delta G_{\tau 1}$ and $\delta_1$ can each be estimated or set to a constant.}
 \label{fig4}
 \end{figure}
 
@@ -535,7 +535,7 @@ The estimation of mean velocity can be broken down into three steps. First, the 
 \subsection*{Relation to previous models and stochastic simulations}
 
 
-\textcolor{red}{\hl{// Section relocated and adapted from ``Discussion" }}
+
 
 There is an extensive literature concerned with the kinetic modelling of transcription elongation. Such models may incorporate backtracking, hypertranslocation, and other reactions. Here we are concerned only with the central elongation pathway.
 
@@ -562,7 +562,7 @@ Finally, Mejia et al. 2015 \cite{mejia2015trigger} used a model that is quite di
 
 
 
-\section*{\hl{Results and Discussion}}
+\section*{Results and Discussion}
 
 
 
@@ -578,7 +578,6 @@ We performed MCMC-ABC experiments which estimated the parameters and model indic
 
 
 
-\textcolor{red}{\hl{// The content below was relocated from the now-removed Materials and Methods}}
 The datasets we fit our models to are all from the single-molecule literature and are presented in: Figures 5a and 5b of Abbondanzieri et al. 2005 \cite{abbondanzieri2005direct} for \textit{ E. coli} RNAP, Figure 2a of Schweikhard et al. 2014 \cite{schweikhard2014transcription} for \textit{ S. cerevisiae} pol II, and Table 2 of Thomen et al. 2008 \cite{thomen2008t7} for T7 pol. To computationally replicate these experiments as faithfully as we could with the available information and computational limitations, simulations in this study were run on the 4 kb \textit{E. coli} \textit{rpoB} gene for RNAP (GenBank: EU274658), the first 4.75 kb of the human \textit{ rpb1} gene for pol II (NCBI: NG\_027747) the first 10 kb of the Enterobacteria phage $\lambda$ genome for T7 pol (NCBI: NC\_001416). The mean velocities from 32 (for RNAP), 10 (for pol II) and 3 (for T7 pol) simulations of the full respective sequences were used to estimate the mean elongation velocity during MCMC-ABC, given $F$ and [NTP].  \par
 
 For further information about the MCMC-ABC algorithm \cite{beaumont2010approximate, csillery2010approximate}, see ~\nameref{S3_Appendix}.
@@ -666,7 +665,7 @@ $\delta_1$ ($\angstrom$) & Uniform($l = 0$, $u = 3.4$) & Uniformly distributed a
 
 \label{S2_Table}
 
-\begin{flushleft} Prior distributions behind all estimated parameters and the model indicator. Unless specified otherwise, the prior distribution is used for all three RNA polymerases. Lognormal priors (parameterised in log space) are used for rates and equilibrium constants while normal priors are used for Gibbs energy terms. \hl{To maintain statistical integrity of the Bayesian analysis, prior distributions were not derived from the data presented by} Abbondanzieri et al. 2005 \cite{abbondanzieri2005direct} for RNAP, by Schweikhard et al. 2014 \cite{schweikhard2014transcription} for pol II, or by Thomen et al. 2008 \cite{thomen2008t7} for T7 pol.
+\begin{flushleft} Prior distributions behind all estimated parameters and the model indicator. Unless specified otherwise, the prior distribution is used for all three RNA polymerases. Lognormal priors (parameterised in log space) are used for rates and equilibrium constants while normal priors are used for Gibbs energy terms. To maintain statistical integrity of the Bayesian analysis, prior distributions were not derived from the data presented by Abbondanzieri et al. 2005 \cite{abbondanzieri2005direct} for RNAP, by Schweikhard et al. 2014 \cite{schweikhard2014transcription} for pol II, or by Thomen et al. 2008 \cite{thomen2008t7} for T7 pol.
 \end{flushleft}
 \label{table2}
 \end{adjustwidth}
@@ -683,7 +682,7 @@ $\delta_1$ ($\angstrom$) & Uniform($l = 0$, $u = 3.4$) & Uniformly distributed a
 \subsection*{The posterior distributions}
 
 
-\textcolor{red}{\hl{// Section relocated and adapted from ``Model selection with MCMC-ABC" }}
+
 
 The posterior distributions from our MCMC-ABC experiments are presented in Table \ref{table1}, Fig ~\ref{fig5}, and Fig ~\ref{fig6}.
 
@@ -763,7 +762,7 @@ Posterior &$P(M_i|D)$  & 0.81  & 0.19 & 0.29 & 0.71 & 0.96  \\
 \end{tabular}
 %\end{footnotesize}
 }
-\begin{flushleft} \textcolor{red}{\hl{// Rhat values and each individual ESS is now shown in this plot. The parameter estimates were moved to Fig 5}}  Each column summarises the posterior distribution for the respective RNA polymerase, which arises from multiple independent MCMC chains. Approximate Bayesian computation threshold $\epsilon$ is shown for each enzyme; state $\Theta$ is accepted into the posterior distribution only if $X^2(\Theta) \leq \epsilon$ (\nameref{S3_Appendix}). Models which appear in an RNA polymerase's 95\% credible set and their posterior probabilities $P(M_i|D)$ are shown. The effective sample size (ESS, calculated with Tracer 1.6 \cite{rambaut2013tracer}) and R-hat ($\hat{R}$ \cite{gelman1992inference, brooks1998general, brooks2011handbook}) of each parameter, conditional on $M_i$, are displayed. A large ESS ($> 100$) and a small $\hat{R}$ ($< 1.1$) imply that the MCMC experiment has converged. Where a parameter is not incorporated in the kinetic model, a `$-$' is left in its place.
+\begin{flushleft} Each column summarises the posterior distribution for the respective RNA polymerase, which arises from multiple independent MCMC chains. Approximate Bayesian computation threshold $\epsilon$ is shown for each enzyme; state $\Theta$ is accepted into the posterior distribution only if $X^2(\Theta) \leq \epsilon$ (\nameref{S3_Appendix}). Models which appear in an RNA polymerase's 95\% credible set and their posterior probabilities $P(M_i|D)$ are shown. The effective sample size (ESS, calculated with Tracer 1.6 \cite{rambaut2013tracer}) and R-hat ($\hat{R}$ \cite{gelman1992inference, brooks1998general, brooks2011handbook}) of each parameter, conditional on $M_i$, are displayed. A large ESS ($> 100$) and a small $\hat{R}$ ($< 1.1$) imply that the MCMC experiment has converged. Where a parameter is not incorporated in the kinetic model, a `$-$' is left in its place.
 \end{flushleft}
 \label{table1}
 \end{adjustwidth}
@@ -775,7 +774,7 @@ Posterior &$P(M_i|D)$  & 0.81  & 0.19 & 0.29 & 0.71 & 0.96  \\
 
 \begin{figure}[!ht]
 %\includegraphics[width=0.9\textwidth]{Images/Figure5.pdf}
-\caption{\hl{\textbf{Posterior and prior distribution plots.}} Posterior distributions for all models which appear in the 95\% credible set are displayed (two models for RNAP, two models for pol II, and one model for T7 pol). Plots show the prior probability density $P(\theta)$ of each parameter and posterior probability density of each parameter conditional on the model $P(\theta | D, M_i)$. The geometric median point-estimates and  highest posterior density (HPD) intervals (calculated with Tracer 1.6 \cite{rambaut2013tracer}) are displayed above each plot (3 sf). }
+\caption{\textbf{Posterior and prior distribution plots.} Posterior distributions for all models which appear in the 95\% credible set are displayed (two models for RNAP, two models for pol II, and one model for T7 pol). Plots show the prior probability density $P(\theta)$ of each parameter and posterior probability density of each parameter conditional on the model $P(\theta | D, M_i)$. The geometric median point-estimates and  highest posterior density (HPD) intervals (calculated with Tracer 1.6 \cite{rambaut2013tracer}) are displayed above each plot (3 sf). }
 \label{fig5}
 \end{figure}
 
@@ -785,7 +784,7 @@ Posterior &$P(M_i|D)$  & 0.81  & 0.19 & 0.29 & 0.71 & 0.96  \\
 
 \begin{figure}[!h]
 %\includegraphics[width=\textwidth]{Images/Figure6.pdf}
-\caption{\textcolor{red}{\hl{// Figure relocated from ``Supporting Information"}} \textbf{Posterior distributions of simulated velocities.} Black open circles represent experimentally measured mean velocities reported in the original publication for (A) RNAP,  (B) pol II, and (C) T7 pol \cite{abbondanzieri2005direct,schweikhard2014transcription,thomen2008t7}. Each coloured dot represents a single sample simulated from the posterior distribution of parameters/models for the respective polymerase. 30 samples were generated from each of the three posterior distributions. For RNAP, [NTP]$_{eq}$ is defined as [ATP] = 5 $\mu$M, [CTP] = 2.5 $\mu$M, [GTP] = 10 $\mu$M, and [UTP] = 10 $\mu$M. }
+\caption{ \textbf{Posterior distributions of simulated velocities.} Black open circles represent experimentally measured mean velocities reported in the original publication for (A) RNAP,  (B) pol II, and (C) T7 pol \cite{abbondanzieri2005direct,schweikhard2014transcription,thomen2008t7}. Each coloured dot represents a single sample simulated from the posterior distribution of parameters/models for the respective polymerase. 30 samples were generated from each of the three posterior distributions. For RNAP, [NTP]$_{eq}$ is defined as [ATP] = 5 $\mu$M, [CTP] = 2.5 $\mu$M, [GTP] = 10 $\mu$M, and [UTP] = 10 $\mu$M. }
 \label{fig6}
 \end{figure}
 
@@ -835,9 +834,6 @@ For RNAP and pol II, translocation has frequently been modelled as an equilibriu
 
 
 
-
-
-\textcolor{red}{\hl{// Content relocated and adapted from ``Model selection with MCMC-ABC"}}
 
 
 It remains unclear how to best model the NTP binding step. Models that describe NTP binding as a kinetic process have posterior probabilities of $0.19$ for RNAP, $0.71$ for pol II and $0.96$ for T7 pol (Table \ref{table1}). However, in our sensitivity analysis, where we used different a prior distribution for $\frac{k_{rel}}{k_{bind}}$, these probabilities were $0.65$, $0.22$, and $0.19$, respectively (results not shown).
@@ -928,7 +924,7 @@ The velocity perturbations resulting from the optical trapping apparatus will be
 
 
 
-\subsection*{Bayesian inference of transcription elongation} To our knowledge we are the first to perform Bayesian inference on single-molecule models of transcription elongation. This was achieved by simulation which necessitated the use of approximate Bayesian computation. An alternative would be to build and use a likelihood function (ie. the probability of taking exactly $t$ units of time for RNA polymerase to copy the sequence $n$ times). \hl{The latter approach can be achieved using chemical master equations, as opposed to (Gillespie) sampling from the distribution. Finding analytical, stable numerical, or approximate solutions to the chemical master equations could provide a similar insight in less computational time, however is susceptible to a multitude of analytical and numerical issues associated with the exponentiation of an arbitrary transition rate matrix that grows with the length of the sequence} (\nameref{S2_Appendix}) \cite{moler2003nineteen}. \hl{This problem would be amplified by the introduction of backtracking, hypertranslocation, or NTP misincorporation reactions into the model, for instance. The Bayesian framework we have presented, although computationally intensive due to its simulation requirement, is general and will work on any model of transcription without the need to resolve these issues. The path has been paved for modelling transcriptional pausing, for instance} \cite{bai2004sequence,tadigotla2006thermodynamic,bai2010comparison}. \hl{Nevertheless, likelihood-based Bayesian inference is an approach that should be explored in the future. }
+\subsection*{Bayesian inference of transcription elongation} To our knowledge we are the first to perform Bayesian inference on single-molecule models of transcription elongation. This was achieved by simulation which necessitated the use of approximate Bayesian computation. An alternative would be to build and use a likelihood function (ie. the probability of taking exactly $t$ units of time for RNA polymerase to copy the sequence $n$ times). The latter approach can be achieved using chemical master equations, as opposed to (Gillespie) sampling from the distribution. Finding analytical, stable numerical, or approximate solutions to the chemical master equations could provide a similar insight in less computational time, however is susceptible to a multitude of analytical and numerical issues associated with the exponentiation of an arbitrary transition rate matrix that grows with the length of the sequence (\nameref{S2_Appendix}) \cite{moler2003nineteen}. This problem would be amplified by the introduction of backtracking, hypertranslocation, or NTP misincorporation reactions into the model, for instance. The Bayesian framework we have presented, although computationally intensive due to its simulation requirement, is general and will work on any model of transcription without the need to resolve these issues. The path has been paved for modelling transcriptional pausing, for instance \cite{bai2004sequence,tadigotla2006thermodynamic,bai2010comparison}. Nevertheless, likelihood-based Bayesian inference is an approach that should be explored in the future.
 
 %\hl{The chemical master equations for single-cycles of these models are presented in} \nameref{S2_Appendix}.
 
@@ -938,7 +934,7 @@ We have demonstrated that single-molecule data can be usefully analysed using a 
 
 
 
-\section*{\hl{Conclusion}}
+\section*{Conclusion}
 
 
 In this article we evaluated some simple Brownian ratchet models of transcription elongation (Fig \ref{fig2}). By varying the parameterisation of the translocation step  (Fig \ref{fig3}) and incorporating partial equilibrium approximations commonly invoked in the literature   (Fig \ref{fig4}A) we enumerated a total of 12 related models (Fig \ref{fig4}B). Using stochastic simulations and approximate Bayesian computation, we then assessed which of these models were capable of describing the force-velocity data previously measured for several RNA polymerases (Table ~\ref{table1} and Fig ~\ref{fig5}) using single-molecule optical trapping experiments \cite{abbondanzieri2005direct, schweikhard2014transcription, thomen2008t7}.
@@ -979,7 +975,7 @@ The amount of time the reaction takes to occur is sampled from the exponential d
 \label{S2_Appendix}
 \textbf{ Chemical master equations.}
 
-\textcolor{red}{\hl{// Added chemical master equations}}
+
 
 The chemical master equations for the four equilibrium variants (Fig ~\ref{fig4}A) of single nucleotide addition cycles are provided in this section. Transcription of a full gene involves chaining multiple of these single-cycle models together.
 
@@ -1253,8 +1249,6 @@ As there is no easily computed likelihood function, simulation is used. The chi-
 
 where $S_i$ is the mean velocity simulated under the same [NTP] and applied force $F$ that $D_i$ was measured under. The probability that $X^2=0$ is equal to the likelihood $P(D | \Theta)$, however it is computationally impractical to only accept parameters into the posterior distribution when the simulation yields $X^2=0$. Therefore a threshold $\epsilon$ is used and sample $\Theta_i$ is accepted into the posterior only if $X^2(\Theta_i) \leq \epsilon$. This method is called approximate Bayesian computation \cite{beaumont2010approximate, csillery2010approximate}. This is coupled with Markov chain Monte Carlo (MCMC) to give the MCMC-ABC algorithm which is becoming increasingly popular among computational biologists \cite{beaumont2010approximate, ratmann2007using}.  \\
 
-
-\textcolor{red}{\hl{// Content below relocated and adapted from the since-removed ``Materials and Methods"}}
 
 
 
