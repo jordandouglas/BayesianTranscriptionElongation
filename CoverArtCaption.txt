@@ -1,0 +1,8 @@
+
+
+
+Kinetic and thermodynamic parameters governing transcription elongation are inferred from single-molecule data. This is done using a Bayesian inference framework which also estimates the kinetic model itself. 
+
+
+
+
